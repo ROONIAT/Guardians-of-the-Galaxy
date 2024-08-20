@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.AvatarMenu"
+            stylesheets="@../CSS/Styles.css"
+            id="pane"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <center>
+        <FlowPane fx:id="avatarFlowPane" prefWrapLength="300" styleClass="flow-pane"/>
+    </center>
+
+    <bottom>
+        <VBox spacing="20.0" alignment="CENTER" fx:id="vbox" styleClass="vbox">
+            <ImageView fx:id="avatarImageView" fitWidth="200" fitHeight="200" styleClass="image-view"/>
+            <Button text="Select Custom File" onMouseClicked="#handleSelectCustomFile" styleClass="button"/>
+            <Button text="back" onMouseClicked="#backtoprofileMenu" styleClass="button"/>
+        </VBox>
+    </bottom>
+
+
+</BorderPane>

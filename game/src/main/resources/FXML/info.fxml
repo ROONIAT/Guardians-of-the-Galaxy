@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../CSS/2.css"
+            fx:controller="view.infoMenu"
+            id="pane"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <top>
+        <VBox alignment="CENTER" spacing="10" styleClass="vbox">
+            <ImageView fx:id="avatarImageView" fitHeight="100.0" fitWidth="100.0" styleClass="imageView" />
+            <Text fx:id="usernameText" styleClass="usernameText" />
+        </VBox>
+    </top>
+
+    <center>
+
+        <VBox alignment="CENTER" prefHeight="624.0" prefWidth="600.0" spacing="20" styleClass="vbox">
+
+            <Button onMouseClicked="#startGame" text="start new game"/>
+            <Button onMouseClicked="#continueGame" text="continue last game"/>
+            <Button onMouseClicked="#goToProfileMenu" text="show profile"/>
+            <Button onMouseClicked="#goToScoresChart" text="show scores"/>
+            <Button onMouseClicked="#goToSetting" text="setting"/>
+            <Button onMouseClicked="#logout" text="logout"/>
+        </VBox>
+
+    </center>
+
+
+</BorderPane>

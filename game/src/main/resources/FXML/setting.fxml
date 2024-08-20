@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.SettingMenu"
+            id="pane"
+            stylesheets="@../CSS/3.css"
+            prefHeight="400.0" prefWidth="600.0">
+
+
+    <center>
+        <VBox alignment="CENTER" prefHeight="624.0" prefWidth="600.0" spacing="20.0" styleClass="vbox">
+            <Button onMouseClicked="#GameDifficulty1" styleClass="button" text="difficulty = 1"/>
+            <Button onMouseClicked="#GameDifficulty2" styleClass="button" text="difficulty = 2"/>
+            <Button onMouseClicked="#GameDifficulty3" styleClass="button" text="difficulty = 3"/>
+            <Button onMouseClicked="#handleMute" styleClass="button" text="mute game"/>
+            <Button onMouseClicked="#handleBlackWhite" styleClass="button" text="Black and White"/>
+            <Button onMouseClicked="#handleCustomControls" styleClass="button" text="W-A-S-D"/>
+            <Button onMouseClicked="#handleBackToinfoMenu" styleClass="button" text="back to info"/>
+        </VBox>
+    </center>
+</BorderPane>

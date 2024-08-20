@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="view.firstMenu"
+            id="pane"
+            stylesheets="@../CSS/1.css"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <center>
+        <VBox alignment="CENTER" spacing="15">
+            <Label text="Guardians of the Galaxy"/>
+            <Button text="log in" onMouseClicked="#login"/>
+            <Button text="register" onMouseClicked="#register"/>
+            <Button text="play as guest" onMouseClicked="#Guest"/>
+            <Button text="Exit" onMouseClicked="#exit"/>
+        </VBox>
+    </center>
+
+</BorderPane>
+
+
+

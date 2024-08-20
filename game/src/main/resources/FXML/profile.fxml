@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.ProfileMenu"
+            id="pane"
+            stylesheets="@../CSS/3.css"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <center>
+        <VBox alignment="CENTER" prefHeight="624.0" prefWidth="600.0" spacing="20.0" styleClass="vbox">
+            <TextField fx:id="usernameField" maxWidth="200" promptText="new Username"/>
+            <Button onMouseClicked="#handleChangeUsername" styleClass="button" text="Change Username"/>
+
+            <TextField fx:id="passwordField" maxWidth="200" promptText="new Password"/>
+            <VBox alignment="CENTER" spacing="50">
+                <Button onMouseClicked="#handleChangePassword" styleClass="button" text="Change password"/>
+                <Button onMouseClicked="#handleDeleteAccount" styleClass="button" text="Delete Account"/>
+            </VBox>
+            <Button onMouseClicked="#handleLogout" styleClass="button" text="Logout"/>
+            <Button onMouseClicked="#handleAvatarMenu" styleClass="button" text="Avatar Menu"/>
+            <Button onMouseClicked="#backToinfoMenu" styleClass="button" text="back"/>
+        </VBox>
+
+    </center>
+
+</BorderPane>

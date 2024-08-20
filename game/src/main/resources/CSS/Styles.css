@@ -1,0 +1,67 @@
+#pane {
+    -fx-background-image: url("../Image/nebula.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-padding: 20;
+}
+
+.vbox {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-radius: 10;
+    -fx-padding: 20;
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+.flow-pane {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-background-radius: 10;
+    -fx-padding: 20;
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-alignment: center;
+}
+
+.image-view {
+    -fx-background-color: rgb(255, 255, 255, 1);
+    -fx-border-color: #FFFFFF; /* White border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-style: solid; /* Border style */
+    -fx-padding: 5px; /* Padding inside the border */
+}
+
+.textField {
+    -fx-font-size: 18px;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-background-radius: 5px;
+    -fx-padding: 10;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.button {
+    -fx-font-size: 18px;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: linear-gradient(#3b0505, #603c3c);
+    -fx-background-radius: 5;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 5, 0.5, 0, 0);
+    -fx-cursor: hand;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-pref-width: 200px;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#5e1717, #603c3c);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(#2a0101, #3b0505);
+    -fx-effect: none;
+}
+
