@@ -1,10 +1,10 @@
-#pane {
-    -fx-background-image: url("../Image/nebula.jpg");
-    -fx-background-repeat: no-repeat;
-    -fx-background-size: cover;
-    -fx-background-position: center center;
-    -fx-padding: 20;
-}
+/*#pane {*/
+/*    -fx-background-image: url("../Image/nebula.jpg");*/
+/*    -fx-background-repeat: no-repeat;*/
+/*    -fx-background-size: cover;*/
+/*    -fx-background-position: center center;*/
+/*    -fx-padding: 20;*/
+/*}*/
 
 VBox {
     -fx-background-color: rgba(0, 0, 0, 0); /* Semi-transparent black background */
